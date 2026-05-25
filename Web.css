@@ -1,0 +1,349 @@
+/* =========================
+   RESET
+========================= */
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* =========================
+   NAVBAR ATAS
+========================= */
+
+.logo-img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.navbar-top {
+  background-color: blue;
+  padding: 10px 20px;
+
+  width: 100%;
+  min-height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-top-container {
+  width: 100%;
+  max-width: 1200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================
+   JUDUL NAVBAR
+========================= */
+
+.navbar-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-subtitle {
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar-heading {
+  font-size: 14px;
+  color: white;
+}
+
+/* =========================
+   NAVBAR UTAMA
+========================= */
+
+.navbar-wrapper {
+  width: 100%;
+}
+
+.navbar-main {
+  width: 100%;
+  min-height: 70px;
+
+  background-color: #222;
+  padding: 15px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.navbar-logo-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  text-transform: capitalize;
+}
+
+.navbar-logo-first,
+.navbar-logo-second {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* =========================
+   MENU NAVIGATION
+========================= */
+
+.navbar-menu {
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+  flex-wrap: wrap;
+
+  text-transform: capitalize;
+}
+
+.navbar-menu > li {
+  list-style-type: none;
+
+  padding: 10px 15px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-menu > li > a {
+  color: white;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu > li:hover {
+  background-color: blue;
+  border-radius: 8px;
+
+  transform: scale(1.05);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+  background-image: url(Assets/Images/smk3.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  min-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-description {
+  font-family: "Abril Fatface", serif;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-school-name {
+  font-family: "Poppins", sans-serif;
+  color: aqua;
+
+  display: flex;
+  align-items: flex-start;
+
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* =========================
+   ARTIKEL
+========================= */
+
+.article-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.article-line {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.article-text {
+  padding: 20px;
+
+  line-height: 1.8;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   CARD PROGRAM
+========================= */
+
+.card-wrapper {
+  padding: 20px;
+}
+
+.card-slider {
+  display: flex;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.card-item {
+  padding: 20px;
+}
+
+.card-image,
+.slider-image {
+  width: 100%;
+  max-width: 300px;
+
+  object-fit: cover;
+}
+
+/* =========================
+   BIOGRAFI
+========================= */
+
+tbody {
+  background-color: #f3f3f3;
+}
+
+.biography-title {
+  background-color: rgb(83, 83, 254);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biography-header {
+  text-align: center;
+
+  font-family: "Open Sans";
+
+  background-color: #bfbfbf;
+}
+
+.biography-content {
+  background-color: #e9e9e9;
+
+  padding: 30px;
+  min-height: 300px;
+}
+
+/* BARIS */
+
+.bio-row {
+  display: flex;
+
+  margin-bottom: 20px;
+
+  font-size: 15px;
+}
+
+.bio-label {
+  width: 300px;
+  font-weight: bold;
+}
+
+.bio-value {
+  color: #333;
+  font-weight: 200;
+}
+
+.biography-footer {
+  background-color: orange;
+
+  padding: 15px;
+
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #0f172a;
+  color: white;
+
+  padding: 60px 8% 30px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-box h3 {
+  margin-bottom: 20px;
+  color: #80aaff;
+}
+
+.footer-box p {
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  padding-top: 20px;
+
+  text-align: center;
+
+  color: #aaa;
+  font-size: 14px;
+}
